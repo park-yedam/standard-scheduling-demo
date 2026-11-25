@@ -1,0 +1,1 @@
+var e={lags:`표준 R-01은 병행 작업을 SS·FF + Lag로 표현하므로 양의 Lag가 많습니다`,relationshipTypes:`표준 R-01은 층별 병행 작업에 SS·FF를 씁니다`,highFloat:`장기 조달·인허가·외부 공사는 구조상 여유가 큽니다`},t=t=>t.key in e;function n(e){let n={pass:0,fail:0,reference:0,notApplicable:0};for(let r of e.metrics)r.pass===null?n.notApplicable++:r.pass?n.pass++:t(r)?n.reference++:n.fail++;return n}export{n,e as t};
